@@ -22,4 +22,8 @@
         </property>
         <property name="typeAliasesPackage" value="org.cherubic.demo.entity"/>
     </bean>
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="org.cherubic.demo.dao"/>
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+    </bean>
 </beans>
