@@ -1,5 +1,10 @@
 package org.cherubic.demo.service;
 
-public interface UserService {
+import org.cherubic.demo.entity.User;
 
+import java.util.List;
+
+public interface UserService {
+    
+    List<User> listAll ();
 }
